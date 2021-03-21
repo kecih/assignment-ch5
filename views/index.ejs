@@ -1,0 +1,18 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>E-Mail</th>
+            <th>Password</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% hasil.forEach(result => { %> 
+        <tr>
+            <td><%= result.id %></td>
+            <td><%= result.email %></td>
+            <td><%= result.password %></td>
+        </tr>
+        <% }) %>
+    </tbody>
+</table>
